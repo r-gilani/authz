@@ -14,6 +14,7 @@ class Config:
     SQLALCHEMY_ECHO = DEBUG
     SQLALCHEMY_RECORD_QUERIES = DEBUG
     SQLALCHEMY_TRACK_MODIFICATIONS = DEBUG
+    TIMEZONE = environ.get("THECHLAND_AUTHZ_TIMEZONE", "Asia,Tehran")
     
     ###################### user config ##################
     
