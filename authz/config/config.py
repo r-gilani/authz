@@ -14,3 +14,9 @@ class Config:
     SQLALCHEMY_ECHO = DEBUG
     SQLALCHEMY_RECORD_QUERIES = DEBUG
     SQLALCHEMY_TRACK_MODIFICATIONS = DEBUG
+    
+    ###################### user config ##################
+    
+    USER_DEFAULT_ROLE = environ.get("TECHLAND_AUTHZ_USER_DEFAULT_ROLE", "member")
+    USER_DEFAULT_EXPIRY_TIME = int(environ.get("TECHLAND_AUTHZ_USER_DEFAULT_EXPIRY_TIME", "365"))
+    USER_DEFAULT_STATUS = int(environ.get("TECHLAND_AUTHZ_USER_DEFAULT_STATUS", "3"))    
